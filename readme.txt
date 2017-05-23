@@ -5,4 +5,8 @@ i love you
 git tracks modify
 my name is zzl
 modify on branch dev
+<<<<<<< HEAD
 on master
+=======
+modify on branch feature1
+>>>>>>> feature1
