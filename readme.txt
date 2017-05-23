@@ -4,9 +4,4 @@ i love you
 2017.5.22
 git tracks modify
 my name is zzl
-modify on branch dev
-<<<<<<< HEAD
-on master
-=======
-modify on branch feature1
->>>>>>> feature1
+and i am ustcer
