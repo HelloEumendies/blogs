@@ -1,8 +1,4 @@
-Git is a version control system
-Git is free software
-i love you 
-2017.5.22
-git tracks modify
-my name is zzl
-and i am ustcer
-rename 
+python3.5.3下mangodb数据库的驱动pymongo安装：
+sudo apt install pymongo==2.8
+高版本会出现不能连接数据库的bug.
+
