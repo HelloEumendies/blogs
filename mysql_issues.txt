@@ -1,0 +1,5 @@
+python mysql插入中文出错:
+show full columns from user查看字段的Collation属性，默认是latin1_swedish_ci，
+ALTER TABLE user convert to char set utf8 collate utf8_general_ci把所有字段改为utf8即可插入中文。
+
+
