@@ -1,11 +1,53 @@
-python中list的复制
+#1 python中list的复制
 ex1:简单列表 a = [1,2]
    b = []
-b只是和a指向了相同的列表，修改a或b督会得到相同的a和b
+b只是和a指向了相同的列表，修改a或b会得到相同的a和b
 b = a[:]才得到了一份a的复制，且修改互不影响
 ex2:嵌套列表 a=[[1],[2,3]]
              b = a[:]也不行
 需要import copy
     b = copy.deepcopy(a)才可以 
 	
+#2 python链式比较
+if 18 < 20 < 30:
+	print("yes")
+print(False == False == True )
+
+#3 python if/else 三目运算
+text = '男' if gender == 'male' else '女'
+
+#4 for/else语句
+or else 是 Python 中特有的语法格式，else 中的代码在 for 循环遍历完所有元素之后执行
+name = ['jack','tom','mery']
+for friend in name:
+	if friend == 'zzl':
+		print('Found')
+		break
+else:
+	print("Not Found")
+#5 字符串格式化
+s = "welcome to {X} to attend the {Y} activity".format(X="beijing",Y="kill")
+print(s)
+
+#6 python yield keyword
+def fib(n):
+    a, b = 0, 1
+    while a < n:
+        yield a
+        a, b = b, a + b
+上面是用生成器生成费波那契数列。生成器的好处就是无需一次性把所有元素加载到内存，只有迭代获取元素时才返回该元素，而列表是预先一次性把全部元素加载到了内存。此外用 yield 代码看起来更清晰。yield还经常用于读取文件，通过一次性读取文件到预设的固定大小的缓存区来防止一次性加载文件全部内容出现未知的内存错误。
+
+#7 获取字典元素
+dict = {"name":"zzl"}
+print(dict.get("name","unknow"))
+
+#8预设字典默认值
+data = [('foo',1),("bar",2),("foo",3),("bar",4)]
+groups = {}
+for (key,val) in data:
+	groups.setdefault(key,[]).append(val)
+
+#9字典推导式
+nums = [1,2,3,4,5]
+dict = {num:num**2 for num in nums if num > 2}
 
