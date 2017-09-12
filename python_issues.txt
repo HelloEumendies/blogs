@@ -51,3 +51,8 @@ for (key,val) in data:
 nums = [1,2,3,4,5]
 dict = {num:num**2 for num in nums if num > 2}
 
+#10反转字符串
+s = "123abc"
+reversed_s = s[::-1]
+
+
