@@ -1,0 +1,4 @@
+编辑redis配置文件：sudo vim /etc/redis/redis.conf 
+重启redis服务:sudo /etc/init.d/redis-server restart
+使用密码访问redis:redis-cli -a password
+redis远程访问:redis-cli -a password -h remote_host_ip
