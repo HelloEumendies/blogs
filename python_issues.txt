@@ -17,7 +17,7 @@ print(False == False == True )
 text = '男' if gender == 'male' else '女'
 
 #4 for/else语句
-or else 是 Python 中特有的语法格式，else 中的代码在 for 循环遍历完所有元素之后执行
+for else 是 Python 中特有的语法格式，else 中的代码在 for 循环遍历完所有元素之后执行
 name = ['jack','tom','mery']
 for friend in name:
 	if friend == 'zzl':
@@ -55,4 +55,13 @@ dict = {num:num**2 for num in nums if num > 2}
 s = "123abc"
 reversed_s = s[::-1]
 
+#11列表推导获取两个列表的所有可能组合
+s1 = [1,2,3,4]
+s2 = [5,6,7,8]
+res = [(x,y) for x in s1 for y in s2]
+
+#12两台机器利用socket通信
+服务器断需要关闭防火墙sudo ufw disable
+并且服务器断socket.bind(ip,port)，ip不能是127.0.0.1要是''或者0.0.0.0或者服务器在局域网内的Ip地址，
+不然客户端连接不上。
 
